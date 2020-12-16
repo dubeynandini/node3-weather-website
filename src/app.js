@@ -21,21 +21,21 @@ hbs.registerPartials(partialsPath)
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'Andrew Mead'
+        name: 'Nandini Dubey'
     })
 })
 
 app.get('/about',(req,res) => {
     res.render('about',{
-        title: 'About me',
-        name: 'Andrew Mead'
+        title: 'About',
+        name: 'Nandini Dubey'
     })
 })
 
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Need help?',
-        name: 'Andrew Mead'
+        name: 'Nandini Dubey'
     })
 })
 
@@ -85,7 +85,7 @@ app.get('/products',(req,res) => {
 app.get('/help/*', (req,res) => {
     res.render('error-404',{
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Nandini Dubey',
         errorMessage: 'Help article not found'
     })
 })
@@ -93,7 +93,7 @@ app.get('/help/*', (req,res) => {
 app.get('*', (req,res) => {
     res.render('error-404',{
         title: '404',
-        name: 'Andrew Mead',
+        name: 'Nandini Dubey',
         errorMessage: 'Page not found!'
     })
 })
